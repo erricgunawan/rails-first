@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users
+  resources :journals
+
   root 'application#hello'
 
   # get '/users', to: 'users#index'

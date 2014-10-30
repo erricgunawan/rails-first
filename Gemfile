@@ -8,7 +8,7 @@ gem 'sqlite3', group: [:development, :test]
 
 # Use pg in production
 group :production do 
-	gem 'pg'
+	gem 'pg --without-pg_config'
 	gem 'rails_12factor'
 end
 
@@ -45,3 +45,5 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'devise'
+gem 'twitter-bootstrap-rails'
