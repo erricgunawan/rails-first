@@ -8,7 +8,7 @@ gem 'sqlite3', group: [:development, :test]
 
 # Use pg in production
 group :production do 
-	gem 'pg --without-pg_config'
+	gem 'pg'
 	gem 'rails_12factor'
 end
 
